@@ -60,14 +60,18 @@ p {
     width: 1158px;
     padding-right: 15px;
     padding-left: 15px;
+    /* padding-bottom: 120px;
+    padding-top: 120px; */
+    /* outline: 2px solid tomato; */
+}
+.section {
     padding-bottom: 120px;
     padding-top: 120px;
-    /* outline: 2px solid tomato; */
 }
 
 /* site nav */
 header {
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--footer-text-color);
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -206,11 +210,14 @@ line-height: 1.2;
     display: flex;
     justify-content: space-between;
 }
-.container.doing {
+.section.doing {
     padding-top: 0px;
 }
 
 /* team */
+.section.team{
+    background-color: var(--btn-bacground-color);
+}
 .team-list {
     display: flex;
     justify-content: space-between;
@@ -220,14 +227,12 @@ line-height: 1.2;
     border-radius: 0px 0px 4px 4px;
 }
 .card-content{
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-       padding: 32px 16px;
+    text-align: center;
+    padding: 32px 16px;
 }
-
+.team-position{
+    color: var(--primery-text-color);
+}
 
 /* footer */
 footer {
@@ -265,7 +270,7 @@ color: var(--btn-bacground-color);
     letter-spacing: 0.04em;
     cursor: pointer;
     height: 48px;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--footer-text-color);
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     border-radius: 4px;
     padding: 12px 24px;
@@ -278,6 +283,10 @@ color: var(--btn-bacground-color);
     
 }
 
+.section.portfolio {
+    padding-top: 96px;
+}
+
 .title-item {
     font-weight: 500;
     font-size: 20px;
@@ -288,9 +297,7 @@ color: var(--btn-bacground-color);
     color: var(--title-text-color);
     text-decoration: none;
 }
-.container.portfolio{
-    padding-top:96px;
-}
+
 .list.buttons{
     display: flex;
     justify-content: center;  
@@ -318,9 +325,9 @@ color: var(--btn-bacground-color);
     margin-bottom: 0px;
 }
 .list.apps .discription {
-    border-left:1px solid #E7E9FC ;
-    border-right:1px solid #E7E9FC ;
-    border-bottom:1px solid #E7E9FC ;
+    border-left:1px solid var(--footer-text-color) ;
+    border-right:1px solid var(--footer-text-color) ;
+    border-bottom:1px solid var(--footer-text-color) ;
     padding: 32px 16px;
  }
 .list.apps .item:hover,
@@ -330,4 +337,7 @@ color: var(--btn-bacground-color);
 .apps .title-item {
     margin-top: 0px;
     margin-bottom: 8px;
+}
+.apps-discription{
+    color: var(--primery-text-color);
 }
